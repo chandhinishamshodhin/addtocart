@@ -5,542 +5,258 @@
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>Add to Cart</title>
+     <link rel="stylesheet" href="style.css">
 
-     <style>
-         body,
-         html {
-             height: 100%;
-             margin: 0;
-             display: flex;
-             justify-content: center;
-             align-items: center;
-         }
-
-         .container {
-             text-align: center;
-         }
-
-         .header-title {
-             display: flex;
-             justify-content: center;
-             align-items: center;
-         }
-
-         .innerBlock {
-
-             display: flex;
-             justify-content: space-between;
-             align-items: center;
-         }
-
-         p {
-             padding: 0px;
-             margin: 0px;
-         }
-
-         .myDIV {
-             border: 5px solid #0baa51;
-         }
-
-         #radio-btn1,
-         #radio-btn12,
-         #radio-btn13 {
-             display: none;
-         }
-
-
-         .hover-content {
-             display: none;
-         }
-
-         .myDIV:hover .hover-content {
-             display: block;
-             background-color: #f6f5f5;
-         }
-
-         .myDIV:hover {
-
-             background-color: #f6f5f5;
-             border: 5px solid #FF6B82;
-
-
-         }
-
-         input[type="radio"]:checked+.innerBlock .hover-content {
-             display: block;
-             color: red;
-         }
-
-         .content-main-heading {
-             color: #FF6B82;
-             font-family: 'Inter,sans-serif';
-             font-size: 35px;
-             font-weight: 800;
-             line-height: 24px;
-             letter-spacing: 0em;
-             text-align: left;
-
-         }
-
-         .content-sub-heading {
-             font-family: 'Inter';
-             font-size: 25px;
-             font-weight: 600;
-             line-height: 57px;
-             letter-spacing: 0em;
-             text-align: left;
-             color: black;
-         }
-
-         .content-sub-heading-1 {
-             font-family: Inter;
-             font-size: 23px;
-             font-weight: 400;
-             line-height: 15px;
-             letter-spacing: 0em;
-             text-align: left;
-             color: black;
-         }
-
-         .badge {
-             background: #FF6B82;
-             font-size: 20px;
-             color: white;
-             padding: 4px 18px;
-             text-align: center;
-             border-radius: 3px;
-         }
-
-         .content-span {
-             font-family: 'Inter';
-             font-size: 10px;
-             font-weight: 400;
-             line-height: 12px;
-             letter-spacing: 0em;
-             text-align: left;
-             color: gray;
-         }
-
-         .content-side-text {
-             font-family: 'Inter';
-             font-size: 22px;
-             font-weight: 800;
-             line-height: 10px;
-             letter-spacing: 0em;
-             text-align: left;
-             color: black;
-             margin-top: 40px;
-         }
-
-         .content-side-text-2 {
-             font-family: 'Inter';
-             font-size: 18px;
-             font-weight: 400;
-             line-height: 56px;
-             letter-spacing: 0em;
-             text-align: left;
-             color: gray;
-             text-decoration: line-through;
-         }
-
-         .content-sub-heading-11 {
-             font-family: 'Inter';
-             font-size: 23px;
-             font-weight: 400;
-             line-height: 15px;
-             letter-spacing: 0em;
-             text-align: left;
-             color: black;
-
-         }
-
-         .content-small-text {
-             font-family: 'Inter';
-             font-size: 20px;
-             font-weight: 400;
-             line-height: 22px;
-             letter-spacing: 0em;
-             text-align: left;
-             color: #000000;
-             /* padding: 30px; */
-         }
-
-         .smal-text {
-             font-family: 'Inter';
-             font-size: 22px;
-             font-weight: 800;
-             line-height: 13px;
-             letter-spacing: 0em;
-             text-align: left;
-             color: black;
-             padding: 20px;
-         }
-
-         .smal-text-1 {
-             font-family: 'Inter';
-             font-size: 22px;
-             font-weight: 800;
-             line-height: 13px;
-             letter-spacing: 0em;
-             text-align: left;
-             color: black;
-             padding: 40px;
-         }
-
-         .content-small-text-1 {
-             display: none;
-         }
-
-         .content-small-text-2 {
-             display: none;
-         }
-
-         .radio-btn:hover {
-             background-color: darkgreen;
-         }
-
-         .content-footer {
-             font-family: 'Inter,sans-serif';
-             font-size: 24px;
-             font-style: italic;
-             font-weight: 400;
-             line-height: 15px;
-             letter-spacing: 0em;
-             text-align: right;
-             color: #00000066;
-             margin-top: 14px;
-         }
-
-         .content-bottom-stl {
-             font-family: 'Inter,sans-serif';
-             font-size: 28px;
-             font-weight: 400;
-             line-height: 40px;
-             letter-spacing: 0em;
-             text-align: left;
-             color: black;
-
-         }
-     </style>
  </head>
-
  <body>
-     <div class="container">
-         <div>
-             <div class="header-title">
-                 <hr style="width:20%;text-align:left;margin-left:0">
-                 <h2 class="content-main-heading">YAY! It’s BOGO</h2>
-                 <hr style="width:20%;text-align:left;margin-left:10">
+     <div class="desktop">
+         <div class="container" >
+             <div>
+                 <div class="header-title">
+                     <hr style="width:20%;text-align:left;margin-left:0">
+                     <h2 class="content-main-heading">YAY! It’s BOGO </h2>
+                     <hr style="width:20%;text-align:left;margin-left:0">
+                 </div>
+
+                 <!-- /// section 1 -->
+                 <div style="padding: 0px 20px 20px 20px;width: 380px;" class="myDIV myDIV1">
+                     <div class="innerBlock">
+                         <div style="display: flex;">
+                             <input type="radio" name="radio" style="margin-right: 20px;margin-bottom:16px;width: 20px;"
+                                 id="radio-btn" />
+                             <!-- ---radio button -->
+                             <input type="radio" name="radio" checked
+                                 style="margin-right: 20px;margin-bottom:16px;width: 20px;" id="radio-btn1" />
+
+                             <div style="text-align: left;">
+                                 <p class="content-sub-heading">1 Unit &nbsp;&nbsp;<span class="badge">10% Off</span>
+                                 </p>
+                                 <p class="content-sub-heading-1">Standard Price</p>
+                             </div>
+                         </div>
+                         <div class="mt-5">
+                             <p class="content-side-text">$10.00 USD</p>
+                             <P class="content-side-text-2">$24.00 USD </P>
+                         </div>
+
+                     </div>
+                     <div style="padding: 20px 0px 0px 0px;" class="hover-content">
+                         <div class="" style="padding: 0px 40px;">
+                             <div style="display: flex;align-items: center;">
+                                 <span style="margin-right: 10px;margin-top:40px;">#1</span>
+                                 <div style="margin-right: 16px;">
+                                     <p class="content-small-text">Size</p>
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="s">S</option>
+                                     </select>
+                                 </div>
+                                 <div>
+                                     <p class="content-small-text">Color</p>
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="Color">Black</option>
+                                     </select>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="" style="padding: 0px 40px;">
+                             <div style="display: flex;align-items: center;">
+                                 <span style="margin-right: 10px;margin-top:14px;">#2</span>
+                                 <div style="margin-right: 16px;">
+
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="s">S</option>
+                                     </select>
+                                 </div>
+                                 <div>
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="Color">Color</option>
+                                     </select>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <!-- /// section 2 -->
+                 <div style="padding: 20px 20px 20px 20px;width: 380px;margin-top: 20px;position: relative;"
+                     class="myDIV myDIV2">
+
+                     <div style="position: absolute;right:8px;top: -8px;">
+                         <button type="button" id="radio" class="badge"
+                             style="background-color:#FF6B82;color: white;border: 1px solid #FF6B82;padding: 10px;font-weight: 700;">Most
+                             Popular</button>
+                     </div>
+                     <div class="innerBlock">
+                         <div style="display: flex;">
+                             <!-- ---radio button-- -->
+                             <input type="radio" id="radio-btn2" name="radio1"
+                                 style="margin-right: 20px;width: 20px;margin-top: -4px;" />
+                             <input type="radio" checked id="radio-btn12" name="radio1"
+                                 style="margin-right: 20px;width: 20px;margin-top: -4px;" />
+                             <div style="text-align: left;">
+                                 <p class="content-sub-heading">2 Unit &nbsp;&nbsp;<span class="badge">20% Off</span>
+                                 </p>
+                                 <div style="display: flex;">
+                                 </div>
+                             </div>
+                         </div>
+                         <div>
+                             <p class="content-side-text">$18.00 USD</p>
+                             <P class="content-side-text-2">$24.00 USD </P>
+                         </div>
+                     </div>
+                     <div style="padding: 0px 0px 0px 0px;" class="hover-content">
+                         <div class="" style="padding: 0px 40px;">
+                             <div style="display: flex;align-items: center;">
+                                 <span style="margin-right: 10px;margin-top:24px;">#1</span>
+                                 <div style="margin-right: 16px;">
+                                     <p class="content-small-text">Size</p>
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="s">S</option>
+                                     </select>
+                                 </div>
+                                 <br>
+                                 <div>
+                                     <p class="content-small-text">Color</p>
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="Color">Black</option>
+                                     </select>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+
+                     <!-- // send sec -->
+                     <div style="padding: 0px 0px 0px 0px;" class="hover-content">
+                         <div class="" style="padding: 0px 40px;">
+                             <div style="display: flex;align-items: center;">
+                                 <span style="margin-right: 10px;margin-top:14px;">#2</span>
+                                 <div style="margin-right: 16px;">
+
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="s">S</option>
+                                     </select>
+                                 </div>
+                                 <br>
+                                 <div>
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="Color">Color</option>
+                                     </select>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
              </div>
 
-             <!-- /// section 1 -->
-
-             <div style="padding: 0px 20px 20px 20px;width: 380px;" class="myDIV myDIV1">
+             <!-- /// section 3 -->
+             <div style="padding: 0px 20px 20px 20px;width: 380px;margin-top: 20px;" class="myDIV myDIV3">
                  <div class="innerBlock">
                      <div style="display: flex;">
-                         <input type="radio" name="radio" style="margin-right: 20px;margin-bottom:16px;width: 20px;"
-                             id="radio-btn" />
-                         <input type="radio" name="radio" checked
-                             style="margin-right: 20px;margin-bottom:16px;width: 20px;" id="radio-btn1" />
-
+                         <input type="radio" name="radio3" id="radio-btn3"
+                             style="margin-right: 20px;width: 20px;height: 20px;margin-top: 16px;" />
+                         <input type="radio" name="radio3" checked id="radio-btn13"
+                             style="margin-right: 20px;width: 20px;height: 20px; margin-top: 16px;" />
                          <div style="text-align: left;">
-                             <p class="content-sub-heading">1 Unit &nbsp;&nbsp;<span class="badge">10% Off</span></p>
-                             <p class="content-sub-heading-1">Standard Price</p>
+                             <p class="content-sub-heading">3 Unit &nbsp;&nbsp;<span class="badge"
+                                     style="position: relative;top: -28px;">30% Off</span></p>
                          </div>
                      </div>
-                     <div class="mt-5">
-                         <p class="content-side-text">$10.00 USD</p>
-                         <P class="content-side-text-2">$24.00 USD </P>
-                     </div>
-
-                 </div>
-                 <div style="padding: 20px 0px 0px 0px;" class="hover-content">
-                     <div class="" style="padding: 0px 40px;">
-                         <div style="display: flex;align-items: center;">
-                             <span style="margin-right: 10px;margin-top:40px;">#1</span>
-                             <div style="margin-right: 16px;">
-                                 <p class="content-small-text">Size</p>
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="s">S</option>
-                                 </select>
-
-                             </div>
-
-                             <div>
-                                 <p class="content-small-text">Color</p>
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="Color">Black</option>
-                                 </select>
-                             </div>
-
-                         </div>
-
-                     </div>
-                     <div class="" style="padding: 0px 40px;">
-                         <div style="display: flex;align-items: center;">
-                             <span style="margin-right: 10px;margin-top:14px;">#2</span>
-                             <div style="margin-right: 16px;">
-
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="s">S</option>
-                                 </select>
-
-                             </div>
-
-                             <div>
-
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="Color">Color</option>
-                                 </select>
-                             </div>
-
-                         </div>
-
-                     </div>
-
-
-                 </div>
-
-             </div>
-
-             <!-- /// section 2 -->
-
-             <div style="padding: 20px 20px 20px 20px;width: 380px;margin-top: 20px;position: relative;"
-                 class="myDIV myDIV2">
-
-                 <div style="position: absolute;right:8px;top: -8px;">
-                     <button type="button" id="radio" class="badge"
-                         style="background-color:#FF6B82;color: white;border: 1px solid #FF6B82;padding: 10px;font-weight: 700;">Most
-                         Popular</button>
-                 </div>
-
-                 <div class="innerBlock">
-
-                     <div style="display: flex;">
-
-                         <input type="radio" id="radio-btn2" name="radio1"
-                             style="margin-right: 20px;width: 20px;margin-top: -4px;" />
-                         <input type="radio" checked id="radio-btn12" name="radio1"
-                             style="margin-right: 20px;width: 20px;margin-top: -4px;" />
-                         <div style="text-align: left;">
-                             <p class="content-sub-heading">2 Unit &nbsp;&nbsp;<span class="badge">20% Off</span></p>
-                             <div style="display: flex;">
-
-                             </div>
-
-                         </div>
-                     </div>
-
                      <div>
-                         <p class="content-side-text">$18.00 USD</p>
+                         <p class="content-side-text">$24.00 USD</p>
                          <P class="content-side-text-2">$24.00 USD </P>
                      </div>
-
                  </div>
                  <div style="padding: 0px 0px 0px 0px;" class="hover-content">
-                     <div class="" style="padding: 0px 40px;">
-                         <div style="display: flex;align-items: center;">
-                             <span style="margin-right: 10px;margin-top:24px;">#1</span>
-                             <div style="margin-right: 16px;">
-                                 <p class="content-small-text">Size</p>
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="s">S</option>
-                                 </select>
-
+                     <div style="padding: 0px 0px 0px 0px;" class="hover-content">
+                         <div class="" style="padding: 0px 40px;">
+                             <div style="display: flex;align-items: center;">
+                                 <span style="margin-right: 10px;margin-top:40px;">#1</span>
+                                 <div style="margin-right: 16px;">
+                                     <p class="content-small-text">Size</p>
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="s">S</option>
+                                     </select>
+                                 </div>
+                                 <br>
+                                 <div>
+                                     <p class="content-small-text">Color</p>
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="Color">Black</option>
+                                     </select>
+                                 </div>
                              </div>
-                             <br>
-                             <div>
-                                 <p class="content-small-text">Color</p>
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="Color">Black</option>
-                                 </select>
-                             </div>
-
                          </div>
-
                      </div>
 
-                 </div>
+                     <!-- // send sec -->
+                     <div style="padding: 0px 0px 0px 0px;" class="hover-content">
+                         <div class="" style="padding: 0px 40px;">
+                             <div style="display: flex;align-items: center;">
+                                 <span style="margin-right: 10px;margin-top:14px;">#2</span>
+                                 <div style="margin-right: 16px;">
 
-                 <!-- // send sec -->
-                 <div style="padding: 0px 0px 0px 0px;" class="hover-content">
-                     <div class="" style="padding: 0px 40px;">
-                         <div style="display: flex;align-items: center;">
-                             <span style="margin-right: 10px;margin-top:14px;">#2</span>
-                             <div style="margin-right: 16px;">
-
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="s">S</option>
-                                 </select>
-
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="s">S</option>
+                                     </select>
+                                 </div>
+                                 <br>
+                                 <div>
+                                     <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
+                                         <option class="smal-text" value="Color">Color</option>
+                                     </select>
+                                 </div>
                              </div>
-                             <br>
-                             <div>
-
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="Color">Color</option>
-                                 </select>
-                             </div>
-
                          </div>
-
                      </div>
-                 </div>
-
-             </div>
-         </div>
-
-
-         <!-- /// section 3 -->
-
-         <div style="padding: 0px 20px 20px 20px;width: 380px;margin-top: 20px;" class="myDIV myDIV3">
-             <div class="innerBlock">
-                 <div style="display: flex;">
-                     <input type="radio" name="radio3" id="radio-btn3"
-                         style="margin-right: 20px;width: 20px;height: 20px;margin-top: 16px;" />
-                     <input type="radio" name="radio3" checked id="radio-btn13"
-                         style="margin-right: 20px;width: 20px;height: 20px; margin-top: 16px;" />
-                     <div style="text-align: left;">
-                         <p class="content-sub-heading">3 Unit &nbsp;&nbsp;<span class="badge"
-                                 style="position: relative;top: -32px;">30% Off</span></p>
-
-                     </div>
-                 </div>
-                 <div>
-                     <p class="content-side-text">$24.00 USD</p>
-                     <P class="content-side-text-2">$24.00 USD </P>
                  </div>
              </div>
-             <div style="padding: 0px 0px 0px 0px;" class="hover-content">
-                 <div style="padding: 0px 0px 0px 0px;" class="hover-content">
-                     <div class="" style="padding: 0px 40px;">
-                         <div style="display: flex;align-items: center;">
-                             <span style="margin-right: 10px;margin-top:40px;">#1</span>
-                             <div style="margin-right: 16px;">
-                                 <p class="content-small-text">Size</p>
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="s">S</option>
-                                 </select>
-
-                             </div>
-                             <br>
-                             <div>
-                                 <p class="content-small-text">Color</p>
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="Color">Black</option>
-                                 </select>
-                             </div>
-
-                         </div>
-
-                     </div>
-
-
-                 </div>
-
-                 <!-- // send sec -->
-                 <div style="padding: 0px 0px 0px 0px;" class="hover-content">
-                     <div class="" style="padding: 0px 40px;">
-                         <div style="display: flex;align-items: center;">
-                             <span style="margin-right: 10px;margin-top:14px;">#2</span>
-                             <div style="margin-right: 16px;">
-
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="s">S</option>
-                                 </select>
-
-                             </div>
-                             <br>
-                             <div>
-
-                                 <select style="padding: 12px; width: 7em; border-radius: 7px;margin-top: 12px;">
-                                     <option class="smal-text" value="Color">Color</option>
-                                 </select>
-                             </div>
-
-                         </div>
-
-                     </div>
-
-
-                 </div>
-
+             <div style="margin-top: 20px; font-size: 20px; display: flex;justify-content: space-between;">
+                 <p class="content-botom-style" style="color: #FF6B82; font-size: 30px;">Free Delivery</p>
+                 <p class="content-bottom-stl">Total :<b> $18.00 USD</b></p>
              </div>
-
+             <div style="margin-top: 20px;display: flex;justify-content: space-between;">
+                 <button type="button" class="btn"
+                     style="width: 100%;background: #FF6B82;; border: 0px;padding: 10px;color: white;font-size: 28px; border-radius: 8px;">+&nbsp;
+                     Add to Cart</button>
+             </div>
+             <p class="content-footer">@ Powered by Pumper</p>
          </div>
-
-         <div style="margin-top: 20px; font-size: 20px; display: flex;justify-content: space-between;">
-             <p class="content-botom-style" style="color: #FF6B82; font-size: 30px;">Free Delivery</p>
-             <p class="content-bottom-stl">Total :<b> $18.00 USD</b></p>
-         </div>
-
-         <div style="margin-top: 20px;display: flex;justify-content: space-between;">
-             <button type="button"
-                 style="width: 100%;background: #FF6B82;; border: 0px;padding: 10px;color: white;font-size: 28px; border-radius: 8px;">+&nbsp;
-                 Add to Cart</button>
-
-
-         </div>
-         <p class="content-footer">@ Powered by Pumper</p>
      </div>
-
      </div>
-
+     <!-- ------script start(radio button) -->
      <script>
          var element = document.querySelector('.myDIV1');
-
-         
          element.addEventListener('mouseover', function () {
-
              document.getElementById('radio-btn').style.display = 'none';
              document.getElementById('radio-btn1').style.display = 'block';
-
-
          });
-
-        
          element.addEventListener('mouseout', function () {
-
              document.getElementById('radio-btn').style.display = 'block';
              document.getElementById('radio-btn1').style.display = 'none';
-
          });
 
          var element1 = document.querySelector('.myDIV2');
-
-         
          element1.addEventListener('mouseover', function () {
-
-
-
              document.getElementById('radio-btn2').style.display = 'none';
              document.getElementById('radio-btn12').style.display = 'block';
          });
 
-         
          element1.addEventListener('mouseout', function () {
-
-
-
              document.getElementById('radio-btn2').style.display = 'block';
              document.getElementById('radio-btn12').style.display = 'none';
          });
 
          var element3 = document.querySelector('.myDIV3');
-
-         
          element3.addEventListener('mouseover', function () {
-            document.getElementById('radio-btn3').style.display = 'none';
+             document.getElementById('radio-btn3').style.display = 'none';
              document.getElementById('radio-btn13').style.display = 'block';
          });
-
-       
          element3.addEventListener('mouseout', function () {
-            document.getElementById('radio-btn3').style.display = 'block';
+             document.getElementById('radio-btn3').style.display = 'block';
              document.getElementById('radio-btn13').style.display = 'none';
          });
      </script>
-
+     <!-- --script end -->
  </body>
-
  </html>
